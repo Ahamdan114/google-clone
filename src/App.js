@@ -6,6 +6,7 @@ function App() {
             <h1>Google Clone incoming</h1>
         </div>
     );
+    
 }
 
 export default App;
