@@ -14,7 +14,7 @@
 .search__input > input {
     flex: 1;
     padding: 10px 20px;
-    font-size:medium;
+    font-size: medium;
     border: none;
 }
 
@@ -47,4 +47,8 @@
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
     color: #222;
+}
+
+.search_buttonsHidden {
+    display: none !important;
 }

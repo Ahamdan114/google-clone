@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
     return (
-        <div className="home">
+        <div className="app">
             <Router>
                 <Routes>
                     <Route path="/search" element={<SearchPage />}></Route>
