@@ -14,11 +14,9 @@ import RoomIcon from "@mui/icons-material/Room";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const SearchPage = () => {
-    const [{ term = "tesla" }, dispatch] = useStateValue();
+    const [{ term }, dispatch] = useStateValue();
     const { data } = useGoogleSearch(term); // LIVE API CALL
-    // const data = Response;
 
-    console.log(data);
     return (
         <div className="searchPage">
             <div className="searchPage__header">
