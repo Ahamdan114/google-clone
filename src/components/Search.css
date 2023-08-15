@@ -40,7 +40,7 @@
     text-transform: inherit;
     color: #5f6368;
 }
-
+ 
 .search__buttons button:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     background-color: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
