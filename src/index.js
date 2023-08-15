@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 
 import { StateProvider } from "./components/StateProvider";
-import reducer, { initialState } from "./reducer";
+import reducer, { initialState } from "./other_files/reducer";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,5 +14,3 @@ root.render(
         </StateProvider>
     </React.StrictMode>
 );
-
-reportWebVitals();

@@ -1,11 +1,12 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-import AppsIcon from "@mui/icons-material/Apps";
-import { Avatar } from "@mui/material";
 
 import "./Home.css";
 import Search from "../components/Search";
+
+import AppsIcon from "@mui/icons-material/Apps";
+import { Avatar } from "@mui/material";
+
 
 const Home = () => {
     return (

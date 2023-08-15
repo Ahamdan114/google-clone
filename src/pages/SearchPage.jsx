@@ -1,19 +1,22 @@
 import React from "react";
-import "./SearchPage.css";
-import { useStateValue } from "../components/StateProvider";
-import Response from "../response";
 import { Link } from "react-router-dom";
-import Search from "../components/Search";
-import useGoogleSearch from "../useGoogleSearch";
+import "./SearchPage.css";
 
-import SearchIcon from "@mui/icons-material/Search";
-import DescriptionIcon from "@mui/icons-material/Description";
-import ImageIcon from "@mui/icons-material/Image";
-import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import RoomIcon from "@mui/icons-material/Room";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import { useStateValue } from "../components/StateProvider";
+import Search from "../components/Search";
+
+import useGoogleSearch from "../other_files/useGoogleSearch";
+import iconsObject from "./iconsImports";
 
 const SearchPage = () => {
+    const {
+        SearchIcon,
+        DescriptionIcon,
+        ImageIcon,
+        LocalOfferIcon,
+        RoomIcon,
+        MoreVertIcon,
+    } = iconsObject;
     const [{ term }, dispatch] = useStateValue();
     const { data } = useGoogleSearch(term); // LIVE API CALL
 
